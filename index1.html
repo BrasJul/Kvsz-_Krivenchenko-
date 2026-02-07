@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukrainian Quiz</title>
+    <link href="https://st.depositphotos.com/10614052/58279/i/450/depositphotos_582795012-stock-photo-wheat-spikelets-ribbons-colors-ukrainian.jpg" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <h1>Ukrainian Quiz</h1>
+            <p id="high-score">Рекорд: 0</p>
+
+            <div class="control-group">
+                <label for="difficulty">Складність:</label>
+                <select id="difficulty">
+                    <option value="easy">Легкий</option>
+                    <option value="medium">Середній</option>
+                    <option value="hard">Важкий</option>
+                </select>
+            </div>
+
+            <button id="start-btn">Розпочати!</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide ">
+            <!-- Блок з таймером та балами -->
+            <div class="header">
+                <span id="timer">Час: 15</span>
+                <span id="score-display">Бали: 0</span>
+            </div>
+            <h2 id="question-text">Запитання 1</h2>
+            <div id="answers-container">
+            </div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <!-- Блок з результатом -->
+            <h2>Квіз завершено!</h2>
+            <p class="result-text"></p>
+            <button id="restart-btn">Спробувати ще</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
